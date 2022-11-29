@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+/* -- Variables -- */
+
+:root {
+
+    --Cyan: hsl(179, 62%, 43%);
+    --brightYellow: hsl(71, 73%, 54%);
+    
+    /* -- Font Colors -- */
+    
+    --lightGray: hsl(204, 43%, 93%);
+    --grayishBlue: hsl(218, 22%, 67%);
+}
+
+/* -- CSS Reset -- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* -- Global Styles -- */
+
+body {
+    font-family: 'Karla', sans-serif;
+    background: var(--lightGray);
+    color: #000;
+    font-size: 15px;
+    line-height: 2;
+    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+main {
+    width: 80%;
+    height: auto;
+    margin: 50px 0px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* -- Header -- */
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.title {
+    color: var(--Cyan);
+    font-weight: 700;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.sub-title {
+    color: var(--brightYellow);
+    text-align: left;
+    font-weight: 700;
+    line-height: 1.3;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+p {
+    color: var(--grayishBlue);
+    text-align: left;
+    font-size: 14px;
+}
+
+/* -- Cards -- */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1px;
+    padding: 30px;
+    height: auto;
+}
+
+h2 {
+    color: var(--VeryDarkBlue);
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 15px;
+    padding-bottom: 10px;
+    text-align: left;
+    color: #fff;
+}
+
+/* -- Card 1 -- */
+
+.card-1 {
+    background-color: var(--Cyan);
+    color: white;
+}
+
+.card-1 #amount {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.card-1 #frequency {
+    color: var(--lightGray);
+    opacity: .6;
+    font-weight: 400;
+    padding: 0 10px;
+}
+
+a {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    background-color: var(--brightYellow);
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    width: 90%;
+    justify-self: center;
+    text-align: center;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* -- Card 2 -- */
+
+.card-2 {
+    background-color: hsl(179, 62%, 48%);
+    color: #fff;
+}
+
+ul li {
+    list-style: none;
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--lightGray);
+}
+
+h3 {
+    padding: 5px 0px;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        max-width: 625px;
+    }
+
+    header {
+        margin: 10px 20px;
+    }
+    
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-1 {
+        border-radius: 1px 1px 0px 5px;
+        padding-left: 45px;
+    }
+    
+    .card-2 {
+        border-radius: 1px 1px 5px 0px;
+        padding-left: 45px;
+    }
+}
