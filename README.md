@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://github.com/RSmith484/Single-price-grid-component.git
 - Live Site URL: https://rsmith484.github.io/Single-price-grid-component/
 
 ## My process
